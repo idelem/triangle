@@ -1,0 +1,441 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanssc.css);
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Monda');
+
+body {
+
+  font-size: 14px;  /* reset for CWS */
+  font: -apple-system-body; /* we'll override the font, but keep the size from iOS dynamic text sizing */
+  /*font-family: "Roboto Slab",sans-serif;*/
+  /*font-family: 'Noto Sans SC', serif;*/
+  font-family: monospace;
+  font-weight: 300;
+  background-color: #FFF !important;
+  color: #555;
+  padding: 0 0;
+  margin: 0 0;
+  -webkit-user-select: text; /* selectable text for Chrome app support */
+}
+#advertisement {
+    background-color: #f5f5f5;
+}
+#header {
+    background-color: #f5f5f5;
+    padding-top: 30px;
+}
+a {
+  /* colored underlined links for XULRunner support */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-decoration-line: none;
+  /* border-bottom: 2px solid gray; */
+  color: gray
+  padding: 5px 5px 7px 7px;
+  font-size: 0.9em;
+  /*background-color: #f5f5f5;*/
+  line-height: 1em
+}
+
+p {
+
+}
+#buttons {
+  padding-bottom: 20px;
+  background-color: inherit;
+  text-align: center;
+}
+
+button {
+  font-family: inherit;
+  color: #555;
+  display: inline-block;
+  border: none;
+  margin: 30 0px;
+  padding: 5px;
+  font-size: 0.9em;
+  text-transform: capitalize;
+  line-height: inherit;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+button:hover {
+  background-color: #e1e1e1
+}
+
+select {
+  width: auto !important;
+  font-family: inherit;
+  color: #555;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  /*padding-right: 15px;*/
+  border: 1px solid;
+  border-color: #f5f5f5;
+  font-size: 0.9em;
+  line-height: inherit;
+  background: url(arrow.png) no-repeat right #f5f5f5;
+  overflow: hidden;
+  box-shadow: none;
+}
+:focus {
+  outline: none;
+  background-color: #f5f5f5;
+}
+::-ms-expand { /* for IE 11 */
+    display: none;
+}
+
+option {
+  color: #555;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: inherit;
+  margin: 5px;
+  padding: 5px;
+  font-size: 0.9em;
+  box-shadow: none;
+}
+
+
+#main {
+    background-color: #fff !important;
+    max-width: 450px;
+    _width:expression(this.scrollWidth > 680 ? "680px" : "auto");
+    margin:auto;
+    margin-top: 4em;
+}
+
+#text {
+    line-height: 1.5em !important;
+}
+
+#text img {
+  max-width: 100%;
+}
+
+.statBar {
+  background-color: #F69A1D;
+  height: 2em;
+  line-height: 2em;
+  margin: 10px auto !important;
+  /*width: 300px;*/
+  width: 95%;
+  color: #fff;
+  position: relative; /* to allow absolute positioned value */
+  z-index: 0;
+}
+.opposed {
+  /*background-color: #a6c1ee;*/
+  /*background-color: #b490ca;*/
+  /*background-color: #EA4F21;*/
+  background-color: #69C6CD;
+}
+
+table {
+  margin-bottom: 1.5em;
+}
+
+.statBar > span, .statLine > span {
+  position: relative;
+  z-index: 1; /* visible over stat value */
+  white-space: nowrap; /* remain on single line so we can resize font based on width */
+}
+
+.statLine {
+    margin: 10px 0;
+}
+
+.statValue {
+  /*background-color: #8A2BE2;*/
+  /*background-color: #fbc2eb;*/
+  /*background-color: #5ee7df;*/
+  background-color: #EA4F21;
+  /*background-color: #F69A1D;*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: -1;
+  /* width will be determined at runtime, 0-100% */
+}
+
+.choice label{
+    padding: 11px 8px 12px;
+    display:block;
+    border: none;
+    /*border-color:#a9acaf;*/
+    /*border-style:solid;*/
+    /*border-width: 1px 1px 0px 1px*/
+}
+:before {
+
+}
+
+.choice .firstChild{
+    /*border-top-width:1px;*/
+    /*-webkit-border-top-right-radius:8px;*/
+    /*-webkit-border-top-left-radius:8px;*/
+    /*border-top-right-radius:8px;*/
+    /*border-top-left-radius:8px;*/
+}
+/* IE doesn't support label:last-child */
+.choice .lastChild{
+    /*border-bottom-width:1px;*/
+    /*-webkit-border-bottom-right-radius:8px;*/
+    /*-webkit-border-bottom-left-radius:8px;*/
+    /*-moz-border-radius:0px 0px 8px 8px;*/
+    /*border-bottom-right-radius:8px;*/
+    /*border-bottom-left-radius:8px;*/
+}
+.choice .onlyChild{
+    /*border-width:1px;*/
+    /*-webkit-border-radius:8px;*/
+    /*-moz-border-radius:8px;*/
+    /*border-radius:8px;*/
+}
+
+.choice .noBorder {
+  border-width: 0;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin-right: 8px;
+  /*visibility: hidden;*/
+}
+
+.saveGame>label {
+  display:block;
+}
+
+.choice .disabled {
+  color: gray;
+}
+
+input[type=password]:disabled {
+  background-color: lightgray;
+}
+
+/* Reset for Firefox vs. Chrome */
+input[type=email],input[type=password] {
+  padding: 1px;
+  margin: 2px 0;
+}
+
+.next {
+    clear: both;
+    display:block;
+    width:100%;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: inherit; /* reset, for Android */
+    margin-top: 2em;
+    margin-bottom: 4em; /* reset button margin */
+    -webkit-appearance: none; /* Safari, don't override my CSS styles */
+    color: #555; /* Match background color */
+    background-color: #f5f5f5;
+    border: none;
+    /*-webkit-border-radius: 0.2em;*/
+    /*-moz-border-radius: 0.2em;*/
+    /*border-radius: 0.2em;*/
+    padding: 10px;
+}
+
+.next:hover {
+  background-color: #e1e1e1;
+}
+
+.h2-wrapper {
+    text-align: center;
+    line-height: 2em;
+}
+
+
+h1 {
+  /*font-size: x-large;*/
+  font-weight: 300;
+  text-align: center;
+  /*font-family: 'Monda', sans-serif;*/
+  color: #555;
+
+}
+
+h2 {
+  /*font-size: large;*/
+  font-weight: 300;
+  /*text-align: center;*/
+  text-align: left;
+  /*font-family: 'Monda', sans-serif;*/
+  font-size: 0.9em;
+  color: gray;
+  border-bottom: 1px solid;
+  border-bottom-color: #ccc;
+  display: inline;
+}
+
+#identity {
+  float: right;
+  display: none;
+}
+
+#identity > a {
+  display: block;
+  text-align: end;
+}
+
+#footer {
+  margin:10px 0px 75px 0px;
+}
+
+#mobileLinks a img {
+  border: 0;
+}
+
+.mobileBadges {
+  margin: 0;
+}
+
+.spacedLink {
+  margin-right:0.25em;
+  margin-left:0.25em;
+}
+
+.spacedLink:last-child {
+  margin-right:0;
+}
+
+#sharelist {
+  margin: 0; /* Eliminate leading space before share links */
+}
+
+#sharelist li {
+  line-height: 1cm; /* Don't let the links bunch up */
+}
+
+.alertify-cover {
+  background-color: black;
+  filter:alpha(opacity=50);
+  opacity: 0.5;
+}
+
+#greybackground {
+    position: fixed;
+    width:100%;
+    height:100%;
+    background-color: black;
+    filter:alpha(opacity=50);
+    opacity: 0.5;
+    top:0;
+    left:0;
+}
+
+.savePassword {
+  font-family: monospace;
+  display: block;
+}
+
+.webOnly { /* We'll override this in JavaScript */
+  display: none;
+}
+
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.625em;
+  margin-bottom: 1em;
+}
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.625em;
+  margin-bottom: 1em;
+}
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+}
+
+#main form {
+  clear: both;
+}
+
+@media only screen and (max-width: 480px) {
+  .definition{
+    display: none;
+  }
+
+  #headerLinks {
+    line-height: 2; /* For tapability */
+  }
+
+  #buttons {
+      padding-bottom: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      display: block;
+      -webkit-column-count:7;-moz-column-count:7;column-count:7;
+     -webkit-column-gap:0px;-moz-column-gap:0px;column-gap:0px;
+  }
+  button {
+      font-size: 14px;
+  }
+
+  #header {
+      padding-top: 5px;
+  }
+
+  .spacedLink {
+    margin: 0;
+  }
+  .gameTitle {
+    /*display: none;*/
+    /*font-size: 16px;*/
+  }
+
+  h1 {
+      display: none;
+      font-size: 16px;
+  }
+  .h2-wrapper {
+    display: none;
+    font-size: 12px;
+    padding-top: 10px;
+
+  }
+
+  #main {
+      margin-top: 3em;
+  }
+
+  .next {
+      margin-bottom: 6em;
+      margin-top: 1em;
+  }
+
+  #advertisement {
+    margin: -8px;
+  }
+
+  .mobileBadges {
+    float: none;
+  }
+
+  /** Floating images should leave enough room for text */
+  #text .alignleft, #text .alignright {
+    max-width: 45%;
+  }
+
+  #main {
+    max-width: 90%;
+  }
+
+  select {
+    width: 2em !important;
+    background: none;
+  }
+}

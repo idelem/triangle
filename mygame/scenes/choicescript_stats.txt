@@ -1,0 +1,11 @@
+文字：
+*stat_chart
+  text Leadership
+  text Strength
+  text Leadership
+  text Strength
+图表：
+*stat_chart
+  percent Leadership
+  opposed_pair Strength
+      Weakness
