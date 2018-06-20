@@ -15,7 +15,19 @@
 *comment "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
 *comment either express or implied.
 
-测试游戏到此结束。
-*achieve a4
+*label general
+获得结局：
+*line_break
+${end}
+*page_break 再来一遍
+*goto_scene startup init
 
-*ending
+*label HE
+达成 HE
+*page_break 再来一遍
+*goto_scene startup init
+
+*label BE
+达成 BE
+*page_break 再来一遍
+*goto_scene startup init

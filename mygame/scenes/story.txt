@@ -1,0 +1,1051 @@
+你喜欢A，A喜欢B，B喜欢你，你要怎么办？
+*line_break
+你喜欢A但是告白一直失败，找D借酒消愁，D告诉了你这个惊天大秘密！
+*line_break
+原来你一直当情敌的B喜欢你很久了
+*line_break
+你准备
+
+*label first_choice
+
+*choice
+  #1：和B说清楚你不喜欢他
+    *set new_driver false
+    *goto one
+  #2：利用B喜欢你让他去拒绝A
+    *set new_driver false
+    *goto two
+  *if (new_driver)
+    #3：和A第三次告白
+      *set new_driver false
+      *goto three
+
+*label one
+
+你和B说清楚你不喜欢他，他嘲笑你自作多情，他怎么会喜欢你这个无聊的家伙。
+*line_break
+你想要打死D但是你还没动手就看到B日剧跑，伤心难过的B因为有了A的安慰渐渐真的发现了A的美好，于是BA在一起了
+
+*page_break 你GG
+
+*set end "最棒的助攻"
+*goto_scene ending general
+
+*label two
+
+你去质问B是不是喜欢A，他看着你大声的说我就是喜欢他怎么样！
+*line_break
+你听了火冒三丈，觉得回去得揍D才行！
+*line_break
+B听到你说要揍D楞了一下问你你知道了？
+*line_break
+你说是啊我知道了，知道你喜欢我！
+*line_break
+B有点慌张，又梗着脖子说这你也信。
+*line_break
+你
+
+*choice
+  #A：我当然不信
+    *goto A
+  #B：我信了所以你其实是喜欢A？
+    *goto B
+  #C：你果然喜欢A！
+    *goto C
+
+*label three
+
+你向A第三次告白，第一次是在雪地，你看着他熟练地和另一个人接吻。
+*line_break
+第二次是在天台你看着他把别人扔下楼。
+*line_break
+他对你笑的鬼魅无比，你更加爱上了他，于是第三次你准备选择在哪告白？
+
+*choice
+  #甲：机甲里
+    *goto aleph
+  #乙：草地上
+    *goto bet
+  #丙：看烟花
+    *goto gimel
+
+*comment ====== A，B，C ======
+
+*label A
+
+*if gg>= 3
+    B跑了他被A抓住变成了A的禁脔，你再也没有见过A和B不知道A把B弄成了什么样子。
+    你陷入了失恋之中，D安慰你和你喝酒，你们酒后乱性，你把D看成了A上了他。
+    一觉醒来D还在打趣你，你恼羞成怒，D装完逼就跑真刺激，你去要抓住D打死他。
+
+    *page_break ……
+    *set end "你追我赶"
+    *goto_scene ending general
+
+你嫌恶的看着他，好像在看一坨恶心的垃圾。
+*line_break
+他立刻难过的后退，你和他说滚，你们是没有可能的！
+*line_break
+B跑走了，他遇到了A两个人在一起了。
+
+*page_break BA在一起了
+*set ab_he +1
+*set end "他们的爱情"
+*goto_scene ending general
+
+
+*label B
+
+*if ab_he >= 3
+    你看着走进浴室的B打开了屋里面的煤气阀门，你离开了B的家。
+    你不想知道B的下场，你只是想要得到A的回答……
+
+    *page_break NE
+    *set end "该死之人"
+    *goto_scene ending general
+
+你说是的
+*line_break
+你B立刻兴奋地要脱衣服，你让他去洗澡。
+*line_break
+他开心的进去了。
+*line_break
+你们两个一夜翻云覆雨。
+*line_break
+
+*page_break 你和B走向了HE
+*set end "转身遇到爱"
+*goto_scene ending general
+
+*label C
+
+你踹B去洗澡，他踉踉跄跄捂着肚子进去了。但是没到一分钟就跑出来，你问他洗了？
+*line_break
+他立刻在你面前转了一圈，水甩了你一身。
+*line_break
+像是一只大型犬一样，在等待你的夸奖
+
+*choice
+  ##：夸奖他
+    *goto hash
+  #&：离开这
+    *goto ampersand
+  #$：殴打他
+    *goto dollar
+
+*comment ====== #，&，$ ======
+
+*label hash
+
+你夸奖他，听到你的夸奖B立刻开心的想要搂住你，可是你之前的行为大概让他怕了
+*line_break
+所以他张开手臂又收了回去，像是一只被主人嫌弃的小狗委委屈屈的看着你。
+*line_break
+你忽然觉得很有趣
+*line_break
+
+*choice
+  #面包：啪啪他
+    *goto bread
+  #蛋糕：告诉他你讨厌死他了
+    *goto cake
+  #饼干：让他去和A断了
+    *goto cookie
+
+*label ampersand
+
+*if gg >= 5
+    你和B在阳光下互相告白，忽然阴云密布，你们两个拉着手想要跑到哪里躲雨。
+    *line_break
+    一辆飞驰的汽车驶过。
+    *line_break
+    你和B倒在血泊里看着从车上走下来的A。
+    *line_break
+    A的笑容那么的美……你失去了意识。
+
+    *page_break 你GG
+    *set end "逃不了"
+    *goto_scene ending general
+
+但是他没有放弃纠缠你，现在你不像以前不知道他喜欢你以为他是情敌。
+*line_break
+一旦发现别人喜欢自己这件事，说毫无感觉也不对。
+*line_break
+于是慢慢的你和B走近了……
+*line_break
+你们在阳光下互相坦白心意
+
+*page_break 你和B，he
+*set end "原来这样也可以"
+*goto_scene ending general
+
+*label dollar
+
+忆起D说B喜欢你。
+*line_break
+男人大多喜欢狗，你也不例外。所以你无意识的摸了摸被自己打青了的部分。
+*line_break
+你问他疼吗？
+*line_break
+他倒吸了口冷气说不疼。
+*line_break
+但是他还是委屈的皱起眉毛，似乎怕你生气又说了两次不疼。
+*line_break
+你感觉好像那天阳光正好你看到一个少年笑着和你打招呼。
+*line_break
+你又回忆起多次的失败……也许和他试试也不错？
+*line_break
+你决定
+
+*choice
+  #泡沫：和他试一试
+    *goto bubble
+  #人鱼：把这种想法扔出去
+    *goto mermaid
+
+*comment ====== 面包，蛋糕，饼干 ======
+
+*label bread
+
+*if ab_he < 3
+    你趁热打铁搞了B，你察觉到B的美好。他被你压在地上，带着深爱的眼神看着你，充满了爱意。
+    *line_break
+    本能让你的多巴胺占领了你的理性，你居然对他心动了。
+    *line_break
+    你爱上了你曾经认为垃圾的人。
+    *line_break
+    你们远走高飞
+
+    *page_break 你和B he……？
+    *set end "爱上垃圾"
+    *goto_scene ending general
+
+*if ab_he >= 3
+    快感占据了你的大脑，他疯狂的干着B。B用力的拥抱你叫你的名字，不停地对你表白，舔你的脚。
+    *line_break
+    你得到了一只忠诚的狗，完全听你话的狗
+    *line_break
+    那么你准备做点什么呢
+
+    *choice
+      #U盘：让B去玩弄A
+        *goto udisk
+      #数据线：让B吧A骗到你家
+        *goto cable
+      #手机：带着你的狗远走高飞
+        *goto phone
+
+
+*label cake
+
+*if rbq >= 2
+    你告诉他你讨厌死他了！B难过的问你怎样你才不讨厌他，你口不择言的说他死掉才可以。
+    *line_break
+    B死了。
+    *line_break
+    你癫狂的去找A说太好了，他死了！现在你只能喜欢我了！
+    *line_break
+    A说没错，他只能喜欢你。
+    *line_break
+    他把你变成了只知道精液的肉便器。
+    *line_break
+    但是你不在乎只要A爱你就够了！
+
+    *page_break ……
+    *set end "专属肉便器"
+    *goto_scene ending general
+
+
+你告诉他你讨厌死他了！B难过的问你怎样你才不讨厌他，你口不择言的说他死掉才可以。
+*line_break
+等到过了几天你听到B的死讯，是D告诉你的。
+*line_break
+你听着电话那边D沉重的声音，门被敲响了。
+
+*page_break 你看到A向你走来……
+*set end "死亡与死亡"
+*goto_scene ending general
+
+*label cookie
+
+你让他去和A断了再和你说些有的没的。
+*line_break
+你看到他听到你松口，立马害羞的挠挠脸，低头和你说好的……我会说清楚的！
+*line_break
+他说他一定会把所有的爱给你，不会和其他任何人有瓜葛！
+*line_break
+于是你看着B离开了
+*line_break
+那么之后你准备
+
+*choice
+  #U：和A告白
+    *goto U
+  #F：把A迷晕捆到你家
+    *goto F
+  #O：给D发个红包
+    *goto O
+
+*comment ====== 泡沫，人鱼 ======
+
+*label bubble
+
+你告诉B你当然还喜欢着A，但是你无可奈何的说自己告白失败了两次……
+*line_break
+你说了好多A的好话，B一边听一边说你也很好啊，又不停的和你表白。
+*line_break
+你们两个坐在一起，你说自己无论怎么都告白失败，非常沮丧。B说他也是，他也希望……
+*line_break
+他看向了你，等待你的回答。
+*line_break
+你答应他和他试一试，但是不保证爱上他。
+*line_break
+为了不让A发现你喜欢上了B，毕竟A太喜欢B了
+*line_break
+
+*choice
+  #拼音：你决定让B和A断开
+    *goto pinyin
+  #单词：你决定和B一起出去旅行
+    *goto word
+  *if killed_by_a >= 3
+    #字母：杀了A
+        *goto letter
+
+*label mermaid
+
+你把这个想法扔了出去，你还是拒绝了B。
+*line_break
+B很难过，他离开了这个城市。
+*line_break
+A要去追B！
+*line_break
+你
+
+*choice
+  #菜刀：去追他们
+    *goto knife
+  #匕首：不去追他们
+    *goto dagger
+  #短剑：打电话给A约他出来
+    *goto sword
+  *if ab_he >= 3
+    #手枪：赶在A之前杀了B
+      *goto pistol
+
+*comment ====== U盘，数据线，手机 ======
+
+*label udisk
+
+你让B去玩弄A，他本来不愿意，可是听到你说让他听话否则就不要他。他立刻把自己打扮的人模狗样去勾引A了。
+*line_break
+A很容易就上钩了，你看着A为了B要死要活的样子仿佛看到了自己。
+*line_break
+你和D不停的喝酒嚎哭，看着你的狗在上A的视频画面。
+*line_break
+你的声音通过蓝牙耳机传给了B让他更加兴奋不停地喊主人主人。
+*line_break
+D不知道你在干嘛，安慰你说对象可以再找一个嘛。
+*line_break
+你拉着D的衣领亲了他，说找他好不好。
+*line_break
+D说好啊，我陪你，陪你到天明。
+*line_break
+他只是在开玩笑，你却心里忽然一沉一直陪伴你的不就是D吗？
+*line_break
+你看向他
+
+*page_break 你和D走向HE
+*set end "一直的陪伴"
+*goto_scene ending general
+
+*label cable
+
+你让B把A骗到你家，A本来还以为B想要玩什么有趣的事情，在你家门口就搂住了B。
+*line_break
+B为了引A上钩已经被A玩弄的快坏掉了。
+*line_break
+你透过猫眼看到A居然在你家门板上搞B。但是看着A兴奋的表情，你感觉所有的血液聚集在下体。
+*line_break
+你看着他们的自撸出来。
+*line_break
+你迷恋上了这种感觉，总是让B以各种方法，让你可以看到他被A上这件事。
+*line_break
+B为了你情愿如此
+*line_break
+你们成了奇怪的关系
+
+*page_break HE
+*set end "奇怪的关系"
+*goto_scene ending general
+
+*label phone
+
+你带着已经彻底犬化的B远走高飞。
+*line_break
+你们来到了新的城市，平常的B就还是那个阳光的少年，你不会知道他曾经做了什么。
+*line_break
+也不会有人知道你们在家里做什么。
+*line_break
+直到有天邻居看到赤裸身体拴着狗绳的B在你家窗台。
+*line_break
+但是B很幸福，他告诉你他很开心和你在一起。
+
+*page_break 你和B，HE
+*set end "你的犬"
+*goto_scene ending general
+
+*comment ====== U，F，O ======
+
+*label U
+
+B高兴地回来告诉你再也没有人阻碍在你们之间，你立刻兴奋的推开他，不管他的呼喊跑去和A去告白。
+*line_break
+因为你太过开心，导致没有看出来A的脸色。
+*line_break
+他问你是不是你让B来和他说这种话的。
+*line_break
+你脱口而出，和我在一起吧A！
+*line_break
+A笑了，笑得那么好看，你心怦怦直跳。
+*line_break
+下一秒它就停止了跳动，你看着A拔出了匕首把你和匕首都扔到了一旁。
+
+*page_break 你GG
+*goto_scene ending
+
+*label F
+
+你尾随着B来到了A的家，看到A伤心欲绝的捶B的胸口，你心里一阵暗爽。
+*line_break
+你放了一阵迷烟看着A和B倒在了一起。
+*line_break
+你进去把A抱了起来运回了家，你捆起来A。看着昏迷中宛若小天使一般的A，你感觉到燥热。
+*line_break
+你
+
+*choice
+  #W：趁热打铁
+    *goto W
+  #H：等待他醒来
+    *goto H
+  #Y：发现他的小秘密
+    *goto Y
+
+*label O
+
+你给帮了大忙的D发了个红包，告诉他你首战告捷！
+*line_break
+D说那就太好了，问你要不要给他再发一个大红包，他会告诉你另一个小秘密。
+*line_break
+你正准备怼他的时候看到了A走到门外。
+*line_break
+这个时候D回复道看来他不需要你的红包了……
+
+*page_break 你GG
+*goto_scene ending
+
+*comment ====== W，H，Y ======
+
+*label W
+
+你趁热打铁，把A捆绑成爱的模样，然后粗暴强硬的占有了他。
+*line_break
+A醒来非常吃惊，发出了哀嚎声，哭丧着说放开我。
+*line_break
+你不为所动，一边说爱他一边狠狠的入侵他。
+*line_break
+A最后哭哑了嗓子，你差点变成药渣。
+*line_break
+但是A却因此回吻了你，表示他爱上了你，太喜欢你了，他双眼放光仿佛花痴一样的看着你。
+*line_break
+于是你们过上了各种play的日子
+
+*page_break 你和A HE
+*set end "世界属于劳动者"
+*goto_scene ending general
+
+*label H
+
+你等着A醒过来，却发现B的脸映在窗户上
+*line_break
+你家是三楼……
+*line_break
+你
+
+*choice
+  #Q：打开窗户
+    *goto Q
+  #Z：把他推下去
+    *goto Z
+  #X：带着A跑
+    *goto X
+
+*label Y
+
+你发现了他的小秘密他居然有一对JJ，因为一直缩小着所以可以藏起来。
+*line_break
+你咽了口吐沫，被蛇信的声音惊到，等你反应过来，已经被蛇缠住了脖子。
+*line_break
+A问你高兴看到的东西吗？
+*line_break
+你渴求的看着他。
+*line_break
+你被A搞了一整夜。
+*line_break
+他摸着几乎失去意识的你的下巴，看着你然后说以后B就是他的了。
+*line_break
+他没有给你补刀直接离开了
+*line_break
+你残废了但是活下来了
+
+*page_break NE
+*set end "双头龙"
+*goto_scene ending general
+
+*comment ====== Q，Z，X ======
+
+*label Q
+
+你打开窗户发现原来只是自己的错觉，B根本没有在外面，只是树影罢了。这个时候你感觉到背后一凉，你还没来得及回身，就听到一声闷哼。
+*line_break
+B把A撞开，A的手上拿着菜刀，刚才就要砍到你的身上。
+*line_break
+B掐着A的脖子，A兴奋的看着B亲吻他的嘴唇
+*line_break
+你感觉到雨落在青青草地
+*line_break
+你准备
+
+*choice
+  #！：阻止B
+    *goto wow
+  #@：逃离在这里
+    *goto at
+  #？：杀死B
+    *goto what
+
+*label Z
+
+你把B推了下去，但是你做这个的时候A醒了过来，他从身后拿起了你开放厨房的菜刀对着你脖子砍了下去。
+*line_break
+你大叫一声还没来记得回身，就被A推了下去。
+*line_break
+三楼很容易摔死人，但是你没死，B也没死
+*line_break
+你看着A走下来，丝毫没有看流血满地的你，他抱起来B不停地亲吻他流出鲜血的嘴。
+*line_break
+A带走了B，而你只能在冷风中等待死亡。
+
+*page_break GG
+*set end "比死更可怕"
+*goto_scene ending general
+
+*label X
+
+你抱着A跑了，但是一出去就看到B从你家另外一个窗户跳了进来。
+*line_break
+A继续跑，但是他从你怀里醒来。他的身体被捆住被你紧紧抱住，你感觉他并没有挣扎，你以为他在看着你。
+*line_break
+而实际上他只是在看着B完全不移开双眼。
+*line_break
+你
+
+*choice
+  #音响：成全A
+    *goto stereo
+  #餐桌：退回卧室跳窗户
+    *goto table
+  #电脑：杀死A
+    *goto computer
+
+*comment ====== ！，@，？ ======
+
+*label wow
+
+你阻止了B，他问你为什么要阻止他。
+*line_break
+他质问你，他为了你已经拒绝了A，为什么你还不接受他。当初他知道你喜欢A他为了你忍着恶心qj了他。
+*line_break
+B：他已经不干净了！
+*line_break
+你
+
+*choice
+  #菠萝：打B一拳
+    *goto pineapple
+  #西瓜：带着A走
+    *goto watermelon
+  #柠檬：杀了B
+    *goto lemon
+
+*label at
+
+你没有阻止B而是直接逃走了，你逃离开你的家，逃离开这个城市，逃离所有的人。
+*line_break
+你不知道A最后死没死，也不知道B是什么下场，你不知道要恨谁，要爱谁。
+*line_break
+你活着但是你疯了
+
+*page_break BE
+*set end "疯了"
+*goto_scene ending general
+
+*label what
+
+你杀了B，你看着手上的鲜血想到了最初你们的相遇。那个腼腆的大男孩儿，笑着叫你的名字。
+*line_break
+B明明已经被你砍死却完全不松开双手，A被他活活掐死了。
+*line_break
+你看着两个人的尸体，窗外传来了警车的声音。
+*line_break
+失魂落魄的你宛如没了人类的意识，进了监狱成了发泄玩具
+
+*page_break ……
+*set end "成为发泄玩具"
+*goto_scene ending general
+
+*comment ====== 菠萝，西瓜，柠檬 ======
+
+*label pineapple
+
+你打了B一拳
+*line_break
+把他从A的身上打下来，A已经昏了过去，你把菜刀踹远。
+*line_break
+你质问B为什么要那样做！为什么要对A施暴？
+*line_break
+你：你以为我这样就会爱上你这个垃圾吗？
+*line_break
+他听到你的话，整个人癫狂了起来，他捡起手边的凳子砸向你。
+*line_break
+你没有躲，因为他只是发泄，他还是无法下手杀你。
+*line_break
+A因为窒息太久，大脑空白，失去记忆。
+*line_break
+你
+
+*choice
+  #笑：在医院好好照顾他
+    *goto laugh
+  #哭：离开这片伤心地
+    *goto tears
+  #怒：上了失去记忆的A
+    *goto anger
+
+*label watermelon
+
+你推开B带走了A，B看向你不停地哭嚎，求你不要离开
+*line_break
+你坚决要走，怀里的A发出微弱的声音。你捂住他的眼睛告诉他没事的。
+*line_break
+等到A醒过来已经失忆了，因为他在最后看的是你所以以为你是他的爱人。
+*line_break
+你们一夜狂欢，不去想B是什么下场。
+*line_break
+你和A
+
+*page_break HE
+*set end "我爱你"
+*goto_scene ending general
+
+*label lemon
+
+你杀了B，你看着手上的鲜血想到了最初你们的相遇。那个腼腆的大男孩儿，笑着叫你的名字。
+*line_break
+A醒过来茫然的看向你，他竟然失忆了。但是看到鲜血他立刻兴奋的笑起来，宛如鬼魅勾魂夺魄。
+*line_break
+你们在b的尸体旁做了，在A即将达到高潮的时候，他让你扼住他的喉咙。
+*line_break
+你用力过猛，掐死了A。
+*line_break
+他在窒息中失禁，下体秽物流了一地，他在兴奋中死去。
+*line_break
+贤者时间的你发现A居然抓着B的手！
+*line_break
+你还活着，但是你疯了
+
+*page_break BE
+*set end "得不到的心"
+*goto_scene ending
+
+*comment ====== 笑，哭，怒 ======
+
+*label laugh
+
+*if killed_by_a < 3
+    你在医院一直照顾着A，他失去了记忆变成胆小害怕的小可怜儿
+    *line_break
+    你看着他那张脸害羞的接过来你的苹果，忍不住亲他。
+    *line_break
+    外面阳光撒在屋里，那么的美好，你搂着他。
+
+    *page_break 你和A HE
+    *goto_scene ending HE
+
+*if killed_by_a >= 3
+    你在医院一直照顾着A，他失去了记忆变成胆小害怕的小可怜儿
+    *line_break
+    你看着他那张脸害羞的接过来你的苹果，忍不住亲他。
+    *line_break
+    外面阳光撒在屋里，那么的美好，你搂着他。
+    *line_break
+    A问你希不希望他想起来以前
+    *line_break
+    你回答
+
+    *choice
+      #香蕉：当然
+        *goto banana
+      #葡萄：不用
+        *goto grape
+
+*label tears
+
+失忆的A根本不是你爱了那么久的A，你离开了这片伤心地。
+*line_break
+D问你上一段的爱情怎么样，他火上浇油的在你耳边唱我听见雨落在青青草地。
+*line_break
+你怒而把看戏的D上了
+*line_break
+你和D HE了
+
+*page_break BE
+*set end "欠扁的家伙"
+*goto_scene ending general
+
+*label anger
+
+你上了失忆的A，他哀嚎着挣扎着。不停地对B伸手向“陌生”的B求救。
+*line_break
+B看着他也看着你他愤恨的看着你们两个人，忽然流出了眼泪。
+*line_break
+B上了你，你们把失忆的A弄得昏迷不醒。
+*line_break
+你们三个人在一起了，扭曲的关系，失忆的A完全成了你的玩具，B不再嫉妒他。
+*line_break
+你被B抱着，带着爱意看着A，却感觉不到A真实的存在。
+
+*page_break 三人行
+*set end "真实的虚假"
+*goto_scene ending general
+
+*comment ====== 香蕉，葡萄 ======
+
+*label banana
+
+你说当然，爱着你的小白花立刻为了寻找记忆回到了你们口中的爱情发起地。
+*line_break
+于是高兴给你打电话的A笑着说他遇到了你的朋友B
+*line_break
+A他说B会和他讲你的事情……
+*line_break
+你听着电话那边B的声音睁大了双眼
+*line_break
+A的声音消失了……
+
+*page_break BE
+*set end "无法回首"
+*goto_scene ending general
+
+*label grape
+
+你说不用你就爱他这个样子，他很开心依偎在你怀里。
+*line_break
+但是你的情感随着时间的推移渐渐变了味一天你回到家，闻到了浓重的血腥味你打开门，看见了B。
+*line_break
+地上的血很多，多到了一个成年男人的量。
+*line_break
+你看着笑起来的B仿佛看到了A，你兴奋的浑身汗毛都炸裂开来。
+*line_break
+你们在血中狂欢，你上了B，他用力的拥抱你，掐住你的脖子亲吻你的嘴唇。一遍遍说他爱你，所有人都夺不走你！那个阳光少年从你的记忆中融化消失。
+
+*page_break 你和B走向HE
+*set end "血中狂欢"
+*goto_scene ending general
+
+*comment ====== 音响，餐桌，电脑 ======
+
+*label stereo
+
+你成全了A把他的束缚拆掉，B愣愣的看着你们。A不断地向B走去，B哭喊着对你。
+*line_break
+你对B说：A就交给你了别让我失望。
+*line_break
+大概是你的别让你失望这几个字成了压垮他最后的稻草，又像是拯救他的稻草被紧紧抓住。
+*line_break
+他牵住了A的手，任由A抚摸他。
+*line_break
+A在他怀里开心的说，我好爱好爱你啊。
+*line_break
+你痛苦的转身离去。
+
+*page_break AB走向HE
+*set ab_he +1
+*set end "为爱放手"
+*goto_scene ending general
+
+*label table
+
+你抱着A退回卧室跳出窗户。
+*line_break
+你只能单手移动，你感觉手上滑脱你急忙搂紧了A。
+*line_break
+你们掉了下去，A毫发无伤，你却磕到了脑后勺。
+*line_break
+你GG
+*line_break
+多年后失忆的你早就不知道你自己是谁，喜欢着谁。
+*line_break
+你的身边坐着的又是谁。
+*line_break
+？？：早知道就不告诉你B喜欢你这件事了。
+
+*page_break ……
+*set end "谜之结局"
+*goto_scene ending general
+
+*label computer
+
+*line_break
+你杀了那个永远无法爱上你的人，他被捆住完全无法反抗。可是就是这样他也完全没有看你，B吃惊的冲过来抓着你的手。
+*line_break
+B对你说不要脏了你的手我来。
+*line_break
+你推开了B，对他吼不许碰A。
+*line_break
+就算是A死了也要在你身边！
+*line_break
+你把A火化了，骨灰做成了戒指戴在手上。
+*line_break
+你看着戒指幸福的笑了，这样A就离不开你了……
+
+*page_break 你和A，HE
+*set end "死也要爱"
+*goto_scene ending
+
+*comment ====== 拼音，单词，字母 ======
+
+*label pinyin
+
+你决定让B和A断开
+*line_break
+B答应你他立刻和A断开
+*line_break
+他直接打电话和A说完，你松了口气。
+*line_break
+你躺在B的面前，B问你可以亲亲你吗？你愣了一下，说现在还不行。B点点头笑着说：嗯，我们还有很长的时间。
+
+*page_break 你和B，HE
+*set end "时间还长"
+*goto_scene ending general
+
+*label word
+
+你决定和B一起去旅行，一路上B一直顺着你，所以你旅途非常愉快。
+*line_break
+一起相处的时间让你慢慢发现了B的好。
+*line_break
+你们一起在同心锁上写上对方的名字。
+*line_break
+你开始相信自己爱的人不如爱自己的人。
+
+*page_break 你和B，HE
+*set end "爱自己的人"
+*goto_scene ending general
+
+*label letter
+
+为了能够有美好的未来，你和B说A的病娇的过去。B喃喃自语难怪A说他喜欢我，你听到愣了一下问他怎么回事。
+*line_break
+你闭口不提，说快点动手吧。
+*line_break
+你和B两个人把A捆了起来从房顶上扔下去。
+*line_break
+你们两个看着对方的，手握在了一起。
+*line_break
+你们离开了这个城市
+
+*page_break 你和B，HE
+*set end "永恒的爱"
+*goto_scene ending general
+
+*comment ====== 菜刀，匕首，短剑，手枪 ======
+
+*label knife
+
+你去追他们，结果却碰到了B强x了A。你怒不可遏的想要打死B，A却阻止你。
+*line_break
+你大喊着为什么要爱上一个人渣，A却在你的哭喊中攀到巅峰。
+*line_break
+A根本不理会你在B的耳边说着什么。
+*line_break
+B痛苦的看向你，然后眼神变得坚定。
+*line_break
+你难过的根本没注意发生什么，你被两个人抓住，成为了两人的玩具。
+
+*page_break 你失去了作为人的正常意识。
+*set end "奇怪的三人行"
+*goto_scene ending general
+
+*label dagger
+
+你没有去追他们
+*line_break
+借酒消愁，D说要不要和他出去玩散散心。你和D出去玩的时候遇到了D的前任男友E，他疯狂的要求D必须回心转意否则就杀了D。
+*line_break
+你看着E癫狂的样子，想起来A。
+*line_break
+D看到你的模样就直接把你推向了E自己跑了。
+*line_break
+你爱上了E，向他示爱
+
+*page_break 他却完全不理你。
+*set end "新的爱情"
+*goto_scene ending general
+
+*label sword
+
+你给A打电话想要约他出来，可是他完全不理你挂断了电话。
+*line_break
+你似乎隐约听到了B的声音。
+*line_break
+再打过去，你就听到了B再叫你。
+*line_break
+A似乎贴着B的耳朵在说什么。
+*line_break
+你听到B的惨叫声，可是这和你有什么关系呢？
+*line_break
+你又叫了两声A，你的态度让B陷入了崩溃。你听到A的笑声，很动听。
+
+*page_break AB走向HE
+*set ab_he +1
+*set end "他们"
+*goto_scene ending general
+
+*label pistol
+
+你赶在A之前杀死了B，你才不管他露出了什么样得表情，你只知道当A来的时候他会受到怎样的惊喜。
+
+*goto_scene ending
+
+*comment ====== 甲，乙，丙 ======
+
+*label aleph
+
+你带着A走进机甲，你正准备向他表白，他对你说很感兴趣某件事。
+*line_break
+于是你啪啪啪啪A到了凌晨
+*line_break
+你很爽
+*line_break
+可是却因为过度的行为
+*line_break
+GG了
+*line_break
+A把榨干的你扔在原地潇洒离开
+
+*goto_scene ending
+
+*label bet
+
+你约A到楼下的草地，他看起来有点走神
+*line_break
+你认真的思索如何告白，来来往往的人很多。
+*line_break
+你觉得他们既是见证者也是碍事的人。
+*line_break
+你
+
+*choice
+  #up：普通的告白
+    *goto up
+  #down：超级大声的告白
+    *goto down
+  #low：在众人面前偷摸A
+    *goto low
+  *if ab_he >= 3
+    #at：在众人面前上A
+      *goto hidden_at
+
+*label gimel
+
+你约A出来一起看烟花，他一点也不想出来。但是不知道为什么晚上他又出来了，很开心的向你走过来。
+*line_break
+你怦然心动就要多他第三次表白，他却越过你扑到了来的B。
+*line_break
+你感觉到雨落在青青草地。
+*line_break
+B挣扎开A想要和你说话……
+*page_break A鄙夷地看着你露出了奇怪的微笑
+A：我给你们买点饮料吧
+*line_break
+你立刻又被A蛊惑了
+*line_break
+喝了好喝的饮料，你感觉越来越晕，你和B都晕倒了
+*line_break
+但是你没有再醒过来
+
+*page_break GG
+*set gg +1
+*set end "蜜汁饮料"
+*goto_scene ending general
+
+*comment ====== up，down，low，隐藏@ ======
+
+*label up
+你普通的告白让A无聊的打起哈欠，他问你只想说这个。他笑着对你挥挥手，你立刻如同哈巴狗靠近他。
+*line_break
+他给了你一巴掌，又亲了你一口。
+*line_break
+你晕晕乎乎的，感觉自己摸到了对方的手。
+*line_break
+但是一切不过是幻觉A早就走远，于是你只能从B那边下手……
+
+*goto first_choice
+
+*label down
+
+你大声的告白引来的人群的围观，D在一旁看热闹。
+*line_break
+A看着你脸上羞红了，非常不好意思的样子。
+*line_break
+你渴求路人给你勇气和加油。于是D鼓动着人群给你们鼓掌，A因此拥抱了你。
+*line_break
+他轻声的在你耳边说不好意思，他喜欢B。
+
+*goto first_choice
+
+*label low
+
+你靠近了A，他不明所以地看着你。你的手摸上了他的腰，因为你们靠得很近所以别人看不到。
+*line_break
+A想要推开你，可是却身体软在你怀中，他看着你双眼含着泪。
+*line_break
+你没忍住，你们在众人的眼中接吻。
+*line_break
+A被众人的视线和你的动作弄到射出来。
+*line_break
+瘫软的A被你抱回了家，你们走上了各种play的道路。
+
+*page_break 你和A，HE
+*set end "同类人"
+*goto_scene ending general
+
+*label hidden_at
+
+你在众人面前扑倒了A撕扯他的衣服，如同野兽发情一般不顾四周人的指指点点和谩骂，把他日的涕泗横流。
+*line_break
+你骂他是条下贱的母狗，他羞耻中带着难以隐藏的兴奋，只靠众人的目光，就喷出一股一股的白色。
+*line_break
+没人敢拉开发了疯的你，就连迟来的B也做不到。
+*line_break
+A回抱了你，你们下体连接在一起被扔进了警车。送到了监狱你们一同成为了囚犯们的肉便器，但是你得到了A
+*line_break
+你很开心。
+
+*page_break 你和A，HE
+*set end "只要在一起就好"
+*goto_scene ending general
+
+*comment *achieve a3

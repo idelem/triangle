@@ -26,14 +26,18 @@
   hidden
   顺利通关！这里是一段通关后记。多年以后，奥雷连诺上校站在行刑队面前，准会想起父亲带他去参观冰块的那个遥远的下午。当时，马孔多是个二十户人家的村庄，一座座土房都盖在河岸上，河水清澈，沿着遍布石头的河床流去，河里的石头光滑、洁白，活象史前的巨蛋。
 
-*title 银河系老司机指南
+*title 蜜汁三角恋
 *scene_list
   startup
+  story
   ending
-  death
 
-*create leadership 50
-*create strength 50
+*create new_driver true
+*create end ""
+*create ab_he 0
+*create killed_by_a 0
+*create gg 0
+*create rbq 0
 
 *create scenecolor "#FFFFFF"
 *create scenecolor2 "#000000"
@@ -47,43 +51,6 @@
 
 *sm_init mygame | 6
 
-*set {"leadership"} 30
-
-欢迎登舰！
-
-这是一个基于 ChoiceScript 的耽美文字游戏。
-
-点击上方导航栏可查看人物属性。在下拉菜单中选择存档位，即可进行读档、存档、删除等操作。
-
-
-*page_break 下一步……
-
-测试文字：
-
-眉间尺刚和他的母亲睡下，老鼠便出来咬锅盖，使他听得发烦。他轻轻地叱了几声，最初还有些效验，后来是简直不理他了，格支格支地径自咬。他又不敢大声赶，怕惊醒了白天做得劳乏，晚上一躺就睡着了的母亲。
-
-许多时光之后，平静了；他也想睡去。忽然，扑通一声，惊得他又睁开眼。同时听到沙沙地响，是爪子抓着瓦器的声音。
-
-“好！该死！”他想着，心里非常高兴，一面就轻轻地坐起来。
-*achieve a1
-*achieve a2
-
-*page_break 继续……
-
-猹出现了！
-*achieve a3
-*choice
-  #捕捉
-    你试图捕捉……
-    *goto succeed
-  #攻击
-    你试图攻击……
-    *goto failure
-
-*label succeed
-成功！
-*finish 然后……
-
-*label failure
-失败！
-*goto_scene death
+*label init
+*set end ""
+*finish
