@@ -46,11 +46,11 @@ B有点慌张，又梗着脖子说这你也信。
 你
 
 *choice
-  #A：我当然不信
+  #牙签：我当然不信
     *goto toothpick
-  #B：我信了所以你其实是喜欢A？
+  #橡皮：我信了所以你其实是喜欢A？
     *goto eraser
-  #C：你果然喜欢A！
+  #格尺：你果然喜欢A！
     *goto ruler
 
 *label three
