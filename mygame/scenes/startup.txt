@@ -37,6 +37,7 @@
 *create ab_he 0
 *create killed_by_a 0
 *create gg 0
+*create threesome 0
 *create rbq 0
 
 *create scenecolor "#FFFFFF"

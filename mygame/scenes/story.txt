@@ -47,11 +47,11 @@ B有点慌张，又梗着脖子说这你也信。
 
 *choice
   #A：我当然不信
-    *goto A
+    *goto toothpick
   #B：我信了所以你其实是喜欢A？
-    *goto B
+    *goto eraser
   #C：你果然喜欢A！
-    *goto C
+    *goto ruler
 
 *label three
 
@@ -68,6 +68,178 @@ B有点慌张，又梗着脖子说这你也信。
     *goto bet
   #丙：看烟花
     *goto gimel
+
+*comment ====== 牙签，橡皮，格尺 ======
+
+*label toothpick
+
+你让他先和A断了再和你谈情说爱。
+*line_break
+你说到爱这个词的时候你看到他明显心动的表情，他害羞的挠挠脸，低头和你说好的……我会说清楚的！
+*line_break
+他说他一定会把所有的爱给你，不会和其他任何人有瓜葛！
+*line_break
+于是你看着B离开了
+*line_break
+那么之后你准备
+
+*choice
+  #U：和A告白
+    *goto U
+  #F：把A迷晕捆到你家
+    *goto F
+  #O：给D发个红包
+    *goto O
+
+*label eraser
+
+你对B说你信了，他愣了一下，整个人都慌张的不行。
+*line_break
+你接下来的话让他露出了痛苦的表情，你对他说但是你居然喜欢着A是吗？
+*line_break
+B立刻和你说自己完全不喜欢A他喜欢的就是你，非常开心你来找他。
+*line_break
+他搓着手如同初恋的大男孩，很不好意思的和你说话。
+*line_break
+他说第一次见到你就喜欢你，一直喜欢到现在。
+*line_break
+你脸上笑嘻嘻心里
+
+*choice
+  #I：mmp
+    *goto I
+  #II：有点感动
+    *goto II
+  #III：不为所动
+    *goto III
+
+*label ruler
+
+你对他大喊你果然喜欢A，B听到就火冒三丈，抓着你的衣领质问你就看不到他对你的好吗？
+*line_break
+你感觉到对方上钩了，于是你笑着说既然你不喜欢A为什么不直接拒绝他？
+*line_break
+B怒火在头直接甩开你去拒绝了A于是A伤心欲绝把B捅死了
+*line_break
+你看着A笑着向你走来他的手上还沾满B的鲜血
+*line_break
+A问你是不是喜欢B
+*line_break
+你说不是
+*line_break
+A说那就没问题了，你还没反应就被A捅死了
+*line_break
+A看着你说他知道你喜欢他，而B喜欢你
+*line_break
+A：那我就把你送给B吧
+
+*page_break 你GG
+*set end "GG"
+*goto_scene ending general
+
+*comment ====== I，II，III ======
+
+*label I
+
+所以当他亲你的时候你直接用膝盖顶到B的胃，他哇的一声吐了你一身。你嫌恶的看着他，拉扯着把他弄到了浴室。
+*line_break
+他抱歉地脱掉衣服，他被爱情冲昏了头脑，问你是不是想主动
+*line_break
+你回答他
+
+*choice
+  #A：不是滚！
+    *goto A
+  #B：是的！
+    *goto B
+  #C：踹他洗澡
+    *goto C
+
+*label II
+
+你有点感动，但也只是感动罢了，你希望对方赶紧去和A断开。
+*line_break
+可是因为这份感动你张了张嘴没说出口，他看着你的嘴唇仿佛得到了某些应许。
+*line_break
+他亲了你
+*line_break
+你没遏制住直接给了他一拳。
+*line_break
+你骂他
+*line_break
+他痛苦的看着你
+*line_break
+B没有还手跑走了，伤心难过的B因为有了A的安慰渐渐真的发现了A的美好，于是AB在一起了
+
+*page_break 你GG
+*set gg +1
+*set ab_he +1
+*set end "三个人的电影你的名字"
+*goto_scene ending general
+
+*label III
+
+你当然不为所动。
+*line_break
+你一点也不喜欢B对他的羞涩，自然毫不在乎
+*line_break
+如果这种表情出现在A的脸上你估计早就心跳过快直接扑倒他了！
+*line_break
+你立刻对B说既然你喜欢我，那你就要和别人断掉。
+*line_break
+B说他没有和任何人好，他拉着你的手。
+*line_break
+你说但是A喜欢你啊，你心里吐血，A太温柔太美好了，我怕你心动……
+*line_break
+他立刻被你说服了，但是眨眨眼睛说想要和你么么哒。
+*line_break
+你
+
+*choice
+  #+：和他么么哒
+    *goto plus
+  #-：让他先去和A断了再么么哒
+    *goto minus
+  #/：推开他
+    *goto divide
+
+*comment ====== +，-，/ ======
+
+*label plus
+
+你忍辱负重愿意和B么么哒，结果B居然得寸进尺跟个小狗似的不停啃你，想要打到本垒一样。
+*line_break
+你被他高超的技艺搞飘飘欲仙，忘乎所以。
+*line_break
+你不知道什么时候A进来了。
+*line_break
+也不知道什么时候插在你身体里的B被捅了个透心凉，他趴在你身上压着你。
+*line_break
+A抱着B看向你。
+*line_break
+你感觉到眼前一黑。
+
+*page_break 你GG
+*set gg +1
+*set end "背刺"
+*goto_scene ending general
+
+*label minus
+
+*goto toothpick
+
+*label divide
+
+你推开了B，他不可置信的看着你
+你连忙说你是想要……你说不出你想要什么。
+他帮你接上了，想要他对吗？
+你开不了口，被对方顺水推舟，他抱住你说他可以等等到地老天荒。
+B对你说，你还是可以随时推开他。
+你这次没有推开他，你们两个离开了这个城市成为了一对好兄弟
+
+*page_break NE
+*set end "好兄弟一辈子"
+*goto_scene ending general
 
 *comment ====== A，B，C ======
 
