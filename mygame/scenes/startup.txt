@@ -16,15 +16,138 @@
 *comment either express or implied.
 
 
-*achievement a1 visible 10 测试
-  用于测试成就
-*achievement a2 visible 50 debug 狂人
-  刷新页面超过50次
-*achievement a3 visible 10 闰土
-  攻击3只猹
-*achievement a4 hidden 100 后记
+*achievement a1 visible 1 结局1
+  ？？？
+  最棒的助攻
+*achievement a2 visible 1 结局2
+  ？？？
+  神助攻
+*achievement a3 visible 1 结局3
+  ？？？
+  三个人的电影你的名字
+*achievement a4 visible 1 结局4
+  ？？？
+  背刺
+*achievement a5 visible 1 结局5
+  ？？？
+  好兄弟一辈子
+*achievement a6 hidden 1 结局6
   hidden
-  顺利通关！这里是一段通关后记。多年以后，奥雷连诺上校站在行刑队面前，准会想起父亲带他去参观冰块的那个遥远的下午。当时，马孔多是个二十户人家的村庄，一座座土房都盖在河岸上，河水清澈，沿着遍布石头的河床流去，河里的石头光滑、洁白，活象史前的巨蛋。
+  你追我赶
+*achievement a7 visible 1 结局7
+  ？？？
+  他们的爱情
+*achievement a8 hidden 1 结局8
+  hidden
+  该死之人
+*achievement a9 visible 1 结局9
+  ？？？
+  转身遇到爱
+*achievement a10 hidden 1 结局10
+  hidden
+  逃不了
+*achievement a11 visible 1 结局11
+  ？？？
+  原来这样也可以
+*achievement a12 hidden 1 结局12
+  hidden
+  爱上垃圾
+*achievement a13 hidden 1 结局13
+  hidden
+  专属肉便器
+*achievement a14 visible 1 结局14
+  ？？？
+  死亡与死亡
+*achievement a15 hidden 1 结局15
+  hidden
+  一直的陪伴
+*achievement a16 hidden 1 结局16
+  hidden
+  奇怪的关系
+*achievement a17 hidden 1 结局17
+  hidden
+  你的犬
+*achievement a18 visible 1 结局18
+  ？？？
+  乐极生悲
+*achievement a19 visible 1 结局19
+  ？？？
+  看门外
+*achievement a20 visible 1 结局20
+  ？？？
+  世界属于劳动者
+*achievement a21 visible 1 结局21
+  ？？？
+  双头龙
+*achievement a22 visible 1 结局22
+  ？？？
+  比死更可怕
+*achievement a23 visible 1 结局23
+  ？？？
+  疯了
+*achievement a24 visible 1 结局24
+  ？？？
+  成为发泄玩具
+*achievement a25 visible 1 结局25
+  ？？？
+  我爱你
+*achievement a26 visible 1 结局26
+  ？？？
+  得不到的心
+*achievement a27 visible 1 结局27
+  ？？？
+  欠扁的家伙
+*achievement a28 visible 1 结局28
+  ？？？
+  真实的虚假
+*achievement a29 visible 1 结局29
+  ？？？
+  无法回首
+*achievement a30 visible 1 结局30
+  ？？？
+  血中狂欢
+*achievement a31 visible 1 结局31
+  ？？？
+  为爱放手
+*achievement a32 visible 1 结局32
+  ？？？
+  谜之结局
+*achievement a33 visible 1 结局33
+  ？？？
+  死也要爱
+*achievement a34 visible 1 结局34
+  ？？？
+  时间还长
+*achievement a35 visible 1 结局35
+  ？？？
+  爱自己的人
+*achievement a36 hidden 1 结局36
+  hidden
+  永恒的爱
+*achievement a37 visible 1 结局37
+  ？？？
+  奇怪的三人行
+*achievement a38 visible 1 结局38
+  ？？？
+  新的爱情
+*achievement a39 visible 1 结局39
+  ？？？
+  他们
+*achievement a40 visible 1 结局40
+  ？？？
+  蜜汁饮料
+*achievement a41 visible 1 结局41
+  ？？？
+  同类人
+*achievement a42 hidden 1 结局42
+  hidden
+  只要在一起就好
+*achievement a43 hidden 1 结局43
+  hidden
+  爱的惊喜
+*achievement a44 visible 1 结局44
+  ？？？
+  药渣
 
 *title 蜜汁三角恋
 *scene_list
@@ -36,6 +159,7 @@
 *create end ""
 *create ab_he 0
 *create killed_by_a 0
+*create kills 0
 *create gg 0
 *create threesome 0
 *create rbq 0
@@ -53,5 +177,6 @@
 *sm_init mygame | 6
 
 *label init
+*set new_driver true
 *set end ""
 *finish
